@@ -1,0 +1,17 @@
+<div class="content" style="height:100%">
+<md-grid-list cols="4" gutterSize="4px" >
+  <md-grid-tile *ngFor="let player of players" [colspan]="1" [rowspan]="1">
+    <md-card class="player-card">
+      <md-card-title>{{player.name}}</md-card-title>   
+      <md-card-content>
+            <p>Player details</p>
+      </md-card-content>
+      <md-card-actions>
+            <button md-button>EDIT</button>
+      </md-card-actions>
+    </md-card>
+  </md-grid-tile>
+</md-grid-list>
+
+<button md-fab style="bottom:15px;right:15px;position:absolute">+</button>
+</div>

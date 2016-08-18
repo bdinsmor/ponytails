@@ -1,0 +1,67 @@
+body {
+      font-family: 'Roboto', sans-serif;
+      background: whitesmoke;
+    }
+md-content {
+    background: whitesmoke;
+}
+md-sidenav {
+  width: 200px;
+  
+}
+
+.nav-bar {
+    background-color: whitesmoke;
+}
+
+.nav-list {
+    list-style: none;
+    padding: 4px;
+    font-family: Roboto;
+}
+
+.nav-item {
+    padding: 10px;
+    position: relative;
+    color: #616161;
+    line-height: 40px;
+    border-radius: 2px;
+    font-weight: bold;
+   
+}
+
+.nav-item:hover {
+    cursor: pointer;
+}
+
+.nav-item:before, .nav-item:after
+{
+  z-index: -1;
+  position: absolute;
+  content: "";
+  bottom: 15px;
+  left: 10px;
+  width: 50%;
+  top: 80%;
+  max-width:300px;
+  background: #777;
+  -webkit-box-shadow: 0 15px 10px #777;
+  -moz-box-shadow: 0 15px 10px #777;
+  box-shadow: 0 15px 10px #777;
+  -webkit-transform: rotate(-3deg);
+  -moz-transform: rotate(-3deg);
+  -o-transform: rotate(-3deg);
+  -ms-transform: rotate(-3deg);
+  transform: rotate(-3deg);
+}
+.nav-item:after
+{
+  -webkit-transform: rotate(3deg);
+  -moz-transform: rotate(3deg);
+  -o-transform: rotate(3deg);
+  -ms-transform: rotate(3deg);
+  transform: rotate(3deg);
+  right: 10px;
+  left: auto;
+}
+

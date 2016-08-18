@@ -1,0 +1,9 @@
+<md-toolbar [color]="accent">
+  <span> Ponytail Express</span>
+  <span class="flex"></span>
+  <div class="layout-column">
+    <button md-tooltip="Show Roster" tooltip-position="below" md-button (click)="changeMode('roster')">  <md-icon>face</md-icon></button>
+  </div> 
+  
+  <button md-tooltip="Show Lineups" tooltip-position="below" md-button (click)="changeMode('lineups')"><md-icon>network_wifi</md-icon></button>
+</md-toolbar>
